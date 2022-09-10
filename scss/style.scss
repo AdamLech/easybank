@@ -30,7 +30,7 @@ button {
   padding: 15px 25px;
   border-radius: 50px;
   text-align: center;
-  max-width: 200px;
+  width: 200px;
   font-size: 1em;
   font-weight: $font-weight-bold;
 }
@@ -38,12 +38,10 @@ button {
 .top-bar,
 .bottom-bar {
   background: $very-light-gray-blue;
-  width: 100%;
 }
 
 .middle-bar {
   background: $light-gray-blue;
-  width: 100%;
 }
 
 .footer {
@@ -52,19 +50,56 @@ button {
 
 h1 {
   font-size: 5em;
-  font-weight: $font-weight-light;
-  color: $dark-blue;
 }
 h2 {
   font-size: 4em;
-  font-weight: $font-weight-light;
 }
 h3 {
   font-size: 2em;
-  font-weight: $font-weight-light;
+}
+h4 {
+  font-size: 1.5em;
 }
 h6 {
   font-size: 0.9em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: $font-weight-light;
+  color: $dark-blue;
+}
+
+p {
+  color: $gray-blue;
+  font-size: 1.2em;
+}
+
+img {
+  width: auto;
+  height: auto;
+}
+
+.header,
+.footer,
+.top-bar,
+.middle-bar,
+.bottom-bar {
+  width: 100%;
+  padding: 0 10%;
+}
+
+.footer {
+  padding: 5vh 10%;
+}
+
+ul {
+  list-style: none;
+  font-size: 1.2em;
 }
 
 @media (max-width: 375px) {
