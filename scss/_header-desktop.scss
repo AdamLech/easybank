@@ -1,0 +1,24 @@
+@media (min-width: 376px) {
+  body {
+    background: #000;
+    .header {
+      background: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 6.5em;
+      position: fixed;
+      width: 100%;
+      padding: 0 10%;
+      margin: auto;
+      #nav-bar {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        gap: 30px;
+      }
+    }
+  }
+}
