@@ -82,7 +82,7 @@ $height: 90vh;
         .bottom-showcase {
           @include showcase-flex();
           gap: 20px;
-          & div {
+          .showcase-element {
             display: flex;
             align-items: start;
             justify-content: center;

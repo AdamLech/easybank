@@ -86,7 +86,7 @@
     align-items: center;
     gap: 20px;
   }
-  body .cont .bottom-bar .bottom-showcase div {
+  body .cont .bottom-bar .bottom-showcase .showcase-element {
     display: flex;
     align-items: start;
     justify-content: center;
@@ -100,15 +100,15 @@
     opacity: 0.85;
     transition: 0.2s ease-out;
   }
-  body .cont .bottom-bar .bottom-showcase div:hover {
+  body .cont .bottom-bar .bottom-showcase .showcase-element:hover {
     opacity: 1;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.08);
   }
-  body .cont .bottom-bar .bottom-showcase div div {
+  body .cont .bottom-bar .bottom-showcase .showcase-element div {
     box-shadow: none;
     padding: 10px;
   }
-  body .cont .bottom-bar .bottom-showcase div img {
+  body .cont .bottom-bar .bottom-showcase .showcase-element img {
     width: 100%;
     height: 100%;
     -o-object-fit: none;
