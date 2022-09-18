@@ -15,6 +15,16 @@
         align-items: center;
         flex-direction: row;
         gap: 30px;
+        height: 100%;
+        li{
+          color:$gray-blue;
+          transition: 200ms ease-in-out;
+        }
+        li:hover{
+          text-shadow: 0px 2px 5px #aaa;
+          color: darken($gray-blue, 20%);
+          cursor: pointer;
+        }
       }
     }
   }

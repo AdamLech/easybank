@@ -16,6 +16,7 @@ $height: 90vh;
 @media (min-width: 376px) {
   body {
     .cont {
+      overflow: hidden;
       display: flex;
       flex-direction: column;
       width: 100%;
@@ -25,7 +26,7 @@ $height: 90vh;
         align-items: center;
         flex-direction: row;
         width: 100%;
-        height: $height;
+        height: 100vh;
         .top-bar-banner {
           width: 50%;
           display: flex;
@@ -36,15 +37,19 @@ $height: 90vh;
             color: $gray-blue;
           }
         }
-        // .bg-desktop {
-        //   width: 50%;
-        //   img {
-        //     width: 100%;
-        //     z-index: 0;
-        //     top: 0
-        //     position: relative;
-        //   }
-        // }
+        .bg-desktop {
+          width: 50%;
+          .top-image-1{
+            position: relative;
+            top: -180px;
+            left: 0;
+          }
+          .top-image-2{
+            position: absolute;
+            top: 0;
+            right: 0;
+          }
+        }
       }
       .middle-bar {
         display: flex;
@@ -67,8 +72,6 @@ $height: 90vh;
           div {
             @include showcase-element-align;
             gap: 20px;
-            p {
-            }
           }
         }
       }
@@ -97,11 +100,15 @@ $height: 90vh;
             transition: 0.2s ease-out;
             &:hover {
               opacity: 1;
-              box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.08);
+              box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.08);
+              cursor: pointer;
+            }
+            &:hover h4{
+              color: $lime-green;
             }
             div {
               box-shadow: none;
-              padding: 10px;
+              padding: 30px;
             }
             img {
               width: 100%;

@@ -1,7 +1,7 @@
-@import "config";
-@import "header-desktop";
-@import "cont-desktop";
-@import "footer-desktop";
+@import "_config";
+@import "_header-desktop";
+@import "_cont-desktop";
+@import "_footer-desktop";
 
 * {
   margin: 0;
@@ -33,19 +33,10 @@ button {
   width: 200px;
   font-size: 1em;
   font-weight: $font-weight-bold;
-}
-
-.top-bar,
-.bottom-bar {
-  background: $very-light-gray-blue;
-}
-
-.middle-bar {
-  background: $light-gray-blue;
-}
-
-.footer {
-  background: $dark-blue;
+  &:hover{
+    cursor: pointer;
+    background: $lighter-gradient;
+  }
 }
 
 h1 {
@@ -82,6 +73,23 @@ p {
 img {
   width: auto;
   height: auto;
+}
+
+.header{
+  z-index: 1000;
+}
+
+.top-bar,
+.bottom-bar {
+  background: $very-light-gray-blue;
+}
+
+.middle-bar {
+  background: $light-gray-blue;
+}
+
+.footer {
+  background: $dark-blue;
 }
 
 .header,
